@@ -1,0 +1,44 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  }
+
+.logContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align:center;
+  margin: 5%;
+  color: #306B35;
+  font-size: 1.2em;
+}
+.loginParagraph {
+  font-size: 2em;
+  color: #B51D4C;
+}
+.input {
+  color: #306B35;
+  font-size: 1em;
+  border-radius: 5em;
+  border-style: none;
+  text-align: center;
+  border: 1px solid #306B35;
+  width: 15em;
+  height: 2em;
+}
+.input :hover{
+  border-style: none;
+}
+.btn {
+  background-color: #C3DB7B;
+  color: #B51D4C;
+  width: 15em;
+  height: 2.5em;
+  font-weight: 400;
+  border-radius: 5em;
+  border-style: solid;
+  border-color: #C3DB7B;
+  text-align: center;
+  font-size: 1em;
+  cursor: pointer;
+}

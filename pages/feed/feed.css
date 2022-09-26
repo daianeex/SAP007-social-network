@@ -1,0 +1,118 @@
+.feedcontainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  background-color: beige;
+  font-size: 1em;
+  margin-left: 15%;
+  margin-right: 15%;
+}
+.postt {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+}
+.headerFeed {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.likeContainer {
+  display: flex;
+  flex-direction: row;
+}
+
+.iconBtn {
+  font-size: 1.5em;
+  background-color: Transparent;
+  border: none;
+  cursor: pointer;
+  padding-right: 4px;
+  text-align: center;
+  padding-left: 3px;
+}
+
+.tituloFeed {
+  color: #B51D4C;
+  font-size: 1.5em;
+}
+
+.postText {
+  font-size: 1.2em;
+  text-align: center;
+  color: #000000;
+}
+
+.tituloPost {
+  color: #B51D4C; 
+  font-size: 1.2em;
+  text-align: center;
+  font-weight: bold;
+  align-items: center;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+.error-writepost {
+  color: red;
+}
+
+#btnPost {
+  font-size: 1.2em;
+  width: 5em;
+  height: 1.3em;
+  cursor: pointer;
+}
+.date {
+  color: #515151;
+}
+
+#postText {
+  font-size: 1.2em;
+  height: 70px;
+}
+
+.divPost {
+  display: flex;
+  flex-direction: column;
+}
+
+#btnLogout {
+  font-size: 1.2em;
+  width: 5em;
+  height: 1.3em;
+  cursor: pointer;
+  background-color: Transparent;
+  border: none;
+}
+
+.modal, writing-modal {
+  text-align: center;
+  background-color: #F3FFC6;
+  border: none;
+}
+
+.inputArea{
+  border-color:#306B35;
+  width: 15em;
+  height: 2em;
+  border-radius: 0.8em;
+}
+
+.btnStyle {
+  background-color: #306B35;
+  border: none;
+  color:beige;
+}
+
+.writing-modal{
+  width: 80%;
+}
+
+@media (max-width: 600px) {
+  .feedcontainer {
+    background-color: #ffffff;
+  }
+}

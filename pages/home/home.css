@@ -1,0 +1,25 @@
+  .homeContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align:center;
+    font-size: 1.5em;
+    color: #1B5354;
+  }
+.logo {
+  width: 75%;
+}
+.welcomeHome {
+  font-size: 2em;
+  color: #B51D4C;
+}
+
+@media (max-width: 600px) {
+  .homeContainer {
+    font-size: 1.2em;
+  }
+  .welcomeHome {
+    font-size: 1.2em;
+  }
+}
