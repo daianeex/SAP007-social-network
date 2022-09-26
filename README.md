@@ -39,13 +39,13 @@ Mapeamos as necessidades dos usuários, e chegamos à definição dos requisitos
 do produto, atráves das respostas mais frequentes no questionario criado no Google forms. 
 [Form do Google](https://docs.google.com/forms/d/e/1FAIpQLScBRqXsR9uPFdO73--b7EenHPU12lZl0QJUQ_NbyNJj9idgdQ/viewform)
 
-![Funcionalidades votadas](img_readme/funcionalidades.jpeg)
-![Funcionalidades sugeridas](img_readme/funcionalidades_ideias.jpeg)
+![Funcionalidades votadas](img_Readme/funcionalidades.jpeg)
+![Funcionalidades sugeridas](img_Readme/funcionalidades_ideias.jpeg)
 
 ### 4.1 Paleta de cores
 
 Nossa paleta de cores foi definida no figma:
-![Paleta](img_readme/palleta.png)
+![Paleta](img_Readme/palleta.png)
 
 ### 4.3 Histórias de usuário
 
@@ -54,10 +54,10 @@ Usuário. Duas representam tudo o que ele precisa fazer/ver na Rede Social. A te
 seria Hacker edition, será utilizada em futuras refatorações.
 
 #### 4.3.1 Histórias de usuário 1
-![Histórias de usuário 1](img_readme/hu1.png)
+![Histórias de usuário 1](img_Readme/hu1.png)
 
 #### 4.3.2 Histórias de usuário 2
-![Histórias de usuário 2](img_readme/hu2.png)
+![Histórias de usuário 2](img_Readme/hu2.png)
 
 ### 4.4 Desenho da Interface de Usuário (protótipo de baixa fidelidade)
 
@@ -65,32 +65,32 @@ Definimos qual será o fluxo que o usuário seguirá dentro do nosso aplicativo 
 com isso, criar a interface do usuário (UI) que siga este fluxo. 
 
 #### 4.4.1 Pagina inicial
-![Pagina inicial](img_readme/inicial_baixa.jpeg)
+![Pagina inicial](img_Readme/inicial_baixa.jpeg)
 
 #### 4.4.2 Aviso tela inicial
-![Aviso tela inicial](img_readme/aviso_baixa.jpeg)
+![Aviso tela inicial](img_Readme/aviso_baixa.jpeg)
 
 #### 4.4.1 Pagina de login
-![Pagina de login](img_readme/login_baixa.jpeg)
+![Pagina de login](img_Readme/login_baixa.jpeg)
 
 #### 4.4.2 Pagina de feed
-![Pagina de feed](img_readme/feed_baixa.jpeg)
+![Pagina de feed](img_Readme/feed_baixa.jpeg)
 
 ### 4.5 Protótipo de alta fidelidade
 
 Os prototipos das telas de mobile foram desenvolvidas no [Figma](https://www.figma.com/file/yEtyBvtHGBeJpbkow6SMbg/Social?node-id=0%3A1). Seguimos a técnica _`mobile first`_ .
 
 #### 4.5.1 Pagina Home
-![Pagina Home](img_readme/home_alta.png)
+![Pagina Home](img_Readme/home_alta.png)
 
 #### 4.5.2 Pagina Login
-![Pagina Login](img_readme/login_alta.png)
+![Pagina Login](img_Readme/login_alta.png)
 
 #### 4.5.1 Pagina Register
-![Pagina Register](img_readme/register_alta.png)
+![Pagina Register](img_Readme/register_alta.png)
 
 #### 4.5.2 Pagina de feed
-![Pagina de feed](img_readme/post_alta.png)
+![Pagina de feed](img_Readme/post_alta.png)
 
 ## 5. Tecnologias utilizadas
 
