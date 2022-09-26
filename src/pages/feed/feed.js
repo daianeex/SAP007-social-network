@@ -1,3 +1,5 @@
+/* eslint-disable arrow-parens */
+/* eslint-disable quote-props */
 import '../../lib/config-firebase.js';
 import { addPosts, getPost } from '../../lib/config-firestore.js';
 import { createCard } from '../../componentes/card.js';
@@ -38,6 +40,7 @@ export default () => {
     if (inputTitulo.value === '' || inputPost.value === '') {
       msgAlert.innerHTML = 'Escreva sua teoria';
     } else {
+      // eslint-disable-next-line no-unused-vars
       addPosts(inputTitulo.value, inputPost.value, auth.currentUser.email).then((id) => {
         let titulo = inputTitulo.value;
         let post = inputPost.value;
@@ -58,6 +61,7 @@ export default () => {
 
   const getPosts = async () => {
     const arrayPosts = await getPost();
+    // eslint-disable-next-line array-callback-return
     arrayPosts.map(posts => {
       const elemento = createCard(posts);
       sectionAllPost.appendChild(elemento);
@@ -73,4 +77,5 @@ export default () => {
 
   getPosts();
   return containerFeed;
-};
+// eslint-disable-next-line semi
+}

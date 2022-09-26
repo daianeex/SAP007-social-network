@@ -1,7 +1,7 @@
 export default () => {
   const containerHome = document.createElement('div');
 
-    const templateHome = `
+  const templateHome = `
       <form class="homeContainer">
       <img class="logo" src="pages/home/logo.png" alt="Logo">
       <p class="welcomeHome">WELCOME</p>
@@ -20,5 +20,4 @@ export default () => {
 
   containerHome.innerHTML = templateHome;
   return containerHome;
-
 };
