@@ -3,7 +3,7 @@ import { modalEditPost } from './modal.js';
 import { modalDeletePost } from './modaldelete.js';
 import { like, dislike } from '../lib/config-firestore.js';
 
-export const criarCard = (post) => {
+export const createCard = (post) => {
   const divCard = document.createElement('div');
   divCard.innerHTML = `
   <div class="divPost">
