@@ -31,10 +31,11 @@ export default () => {
     e.preventDefault();
     loginGoogle()
       .then(() => {
-    window.location.hash = '#feed';    
-    })
+        window.location.hash = '#feed';
+      })
+      // eslint-disable-next-line no-unused-vars
       .catch((error) => {
-      msgAlert.innerHTML = 'Login não deu certo, tente novamente!';
+        msgAlert.innerHTML = 'Login não deu certo, tente novamente!';
       });
   });
 
@@ -42,55 +43,58 @@ export default () => {
     e.preventDefault();
     if (loginEmail.value) {
       userLogin(loginEmail.value, loginSenha.value)
-      .then(() => {
-        window.location.hash = '#feed';
-      })
-      .catch((error) => {
-        const errorCode = error.code;
-        let messageError = error.message;
-
-        switch (errorCode) {
-          case 'auth/wrong-password':
-            messageError = 'Senha errada.';
-            msgAlert.innerHTML = messageError;
-            break;
-          case 'auth/invalid-email':
-            messageError = 'Insira um email válido.';
-            msgAlert.innerHTML = messageError;
-            break;
-          case 'auth/user-not-found':
-              messageError = 'Usuário não encontrado.';
-              msgAlert.innerHTML = messageError;
-            break;
-          case 'auth/internal-error':
-              messageError = 'Insira a senha.';
-              msgAlert.innerHTML = messageError;
-            break;
-            default:
-              messageError = 'Erro desconhecido';
-              msgAlert.innerHTML = messageError;  
-        }          
-      });
-    }
-  });
-        
-  btReset.addEventListener('click', (e) => {
-      e.preventDefault();  
-      sendPasswordResetEmail(auth, email)
-      .then(() => {
-         msgAlert.innerHTML = "E-mail enviado para recurar senha!";
-            // Password reset email sent!
-            // ..
+        .then(() => {
+          window.location.hash = '#feed';
         })
         .catch((error) => {
-        switch (errorCode) {
-         case 'auth/invalid-email':
-          messageError = 'Insira um email válido.';
-          msgAlert.innerHTML = messageError;
-          break;
-        }
-        });
-    });
+          const errorCode = error.code;
+          let messageError = error.message;
 
-return containerLogin;
-}
+          switch (errorCode) {
+            case 'auth/wrong-password':
+              messageError = 'Senha errada.';
+              msgAlert.innerHTML = messageError;
+              break;
+            case 'auth/invalid-email':
+              messageError = 'Insira um email válido.';
+              msgAlert.innerHTML = messageError;
+              break;
+            case 'auth/user-not-found':
+              messageError = 'Usuário não encontrado.';
+              msgAlert.innerHTML = messageError;
+              break;
+            case 'auth/internal-error':
+              messageError = 'Insira a senha.';
+              msgAlert.innerHTML = messageError;
+              break;
+            default:
+              messageError = 'Erro desconhecido';
+              msgAlert.innerHTML = messageError;
+          }
+        });
+    }
+  });
+
+  btReset.addEventListener('click', (e) => {
+    e.preventDefault();
+    // eslint-disable-next-line no-undef
+    sendPasswordResetEmail(auth, email)
+      .then(() => {
+        msgAlert.innerHTML = 'E-mail enviado para recurar senha!';
+      })
+      // eslint-disable-next-line no-unused-vars
+      .catch((error) => {
+        // eslint-disable-next-line default-case, no-undef
+        switch (errorCode) {
+          case 'auth/invalid-email':
+            // eslint-disable-next-line no-undef
+            messageError = 'Insira um email válido.';
+            // eslint-disable-next-line no-undef
+            msgAlert.innerHTML = messageError;
+            break;
+        }
+      });
+  });
+
+  return containerLogin;
+};

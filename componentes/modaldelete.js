@@ -14,28 +14,26 @@ export function modalDeletePost(post, containerFeed) {
       </div>
       `;
 
-    modalDelContainer.innerHTML = ModalDeleteTemplate;
+  modalDelContainer.innerHTML = ModalDeleteTemplate;
 
-    const modalDelete = modalDelContainer.querySelector('#modal-delete');
-    const deletePostBtn = modalDelContainer.querySelector('#delete-post');
-    const buttonCancel = modalDelContainer.querySelector('#button-cancel');
+  const modalDelete = modalDelContainer.querySelector('#modal-delete');
+  const deletePostBtn = modalDelContainer.querySelector('#delete-post');
+  const buttonCancel = modalDelContainer.querySelector('#button-cancel');
 
+  deletePostBtn.addEventListener('click', () => {
+    deletePost(post.id);
+    containerFeed.remove(post);
+  });
 
-    deletePostBtn.addEventListener('click', () => {
-        deletePost(post.id);
-        containerFeed.remove(post);
-    });
+  buttonCancel.addEventListener('click', () => {
+    modalDelContainer.remove();
+  });
 
-    buttonCancel.addEventListener('click', () => {
-        modalDelContainer.remove();
-    });
+  window.addEventListener('click', (e) => {
+    if (e.target === modalDelete) {
+      modalDelContainer.remove();
+    }
+  });
 
-    window.addEventListener('click', (e) => {
-        if (e.target === modalDelete) {
-            modalDelContainer.remove();
-        }
-    });
-
-    return modalDelContainer;
+  return modalDelContainer;
 }
-
