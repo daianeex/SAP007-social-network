@@ -33,7 +33,7 @@ Este projeto projeto foi organizado utilizando o Trello:
 
 ## 4. UX e UI do projeto
 
-### 4.2 Definição do produto
+### 4.1 Definição do produto
 
 Mapeamos as necessidades dos usuários, e chegamos à definição dos requisitos principais 
 do produto, atráves das respostas mais frequentes no questionario criado no Google forms. 
@@ -42,7 +42,7 @@ do produto, atráves das respostas mais frequentes no questionario criado no Goo
 ![Funcionalidades votadas](img_Readme/funcionalidades.jpeg)
 ![Funcionalidades sugeridas](img_Readme/funcionalidades_ideias.jpeg)
 
-### 4.1 Paleta de cores
+### 4.2 Paleta de cores
 
 Nossa paleta de cores foi definida no figma:
 ![Paleta](img_Readme/palleta.png)
