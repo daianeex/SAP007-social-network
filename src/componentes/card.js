@@ -6,15 +6,15 @@ import { like, dislike } from '../lib/config-firestore.js';
 export const createCard = (post) => {
   const divCard = document.createElement('div');
   divCard.innerHTML = `
-  <div class="divPost">
-    <div class="tItulo">${post.titulo}</div><br>   
+  <section class="divPost">
+    <section class="tItulo">${post.titulo}</section><br>   
       <h4 class="post-itens">Autor(a):${post.userEmail} </h4>
   
-    <div id="data${post.id}" class="date">${post.date}
-    </div> 
-    <div id="postText-${post.id}" class="postText">${post.post}</div>
-      <div class="linePost"></div><br>
-    <div class="likeContainer containerBtn" id="like">
+    <section id="data${post.id}" class="date">${post.date}
+    </section> 
+    <section id="postText-${post.id}" class="postText">${post.post}</section>
+      <section class="linePost"></section><br>
+    <section class="likeContainer containerBtn" id="like">
       <button id="${post.id}" class="like iconBtn">
     <i class="fa-brands fa-gratipay"></i> 
     <label id="contlikes" class="contlikes">${post.likes.length}</label>
@@ -25,9 +25,9 @@ export const createCard = (post) => {
         <button id="delete${post.id}" class="iconDelete iconBtn">        
           <i class="fa-regular fa-trash-can"></i>
         </button>
-      </div>
+      </section>
       <hr><br>
-        </div>
+        </section>
 `;
 
   const btnEditPost = divCard.querySelector('#modal-btn-edit');
