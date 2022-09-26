@@ -1,6 +1,6 @@
 import '../../lib/config-firebase.js';
 import { addPosts, getPost } from '../../lib/config-firestore.js';
-import { criarCard } from '../../componentes/card.js';
+import { createCard } from '../../componentes/card.js';
 import { auth, userLogout } from '../../lib/auth-firebase.js';
 
 export default () => {
@@ -49,7 +49,7 @@ export default () => {
           date,
           likes: [],
         };
-        sectionNewPost.appendChild(criarCard(item));
+        sectionNewPost.appendChild(createCard(item));
         titulo = '';
         post = '';
       });
@@ -59,7 +59,7 @@ export default () => {
   const getPosts = async () => {
     const arrayPosts = await getPost();
     arrayPosts.map(posts => {
-      const elemento = criarCard(posts);
+      const elemento = createCard(posts);
       sectionAllPost.appendChild(elemento);
     });
   };
