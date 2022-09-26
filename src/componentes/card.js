@@ -7,7 +7,7 @@ export const createCard = (post) => {
   const divCard = document.createElement('div');
   divCard.innerHTML = `
   <section class="divPost">
-    <section class="tItulo">${post.titulo}</section><br>   
+    <section class="tituloPost">${post.titulo}</section><br>   
       <h4 class="post-itens">Autor(a):${post.userEmail} </h4>
   
     <section id="data${post.id}" class="date">${post.date}
