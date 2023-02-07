@@ -77,5 +77,5 @@ export default () => {
 
   getPosts();
   return containerFeed;
-// eslint-disable-next-line semi
+  // eslint-disable-next-line semi
 }
